@@ -1,0 +1,21 @@
+<div class="container rounded border border-primary mb-3">
+  <div class="my-3">
+    <h3 [ngClass]="{ strike: !todo.active }">{{ todo.title }}</h3>
+    <p [ngClass]="{ strike: !todo.active }">{{ todo.desc }}</p>
+
+    <div class="form-group form-check">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        (click)="onCheckBoxClick(todo)"
+        [checked]="!todo.active"
+        id="todo{{ i }}"
+      />
+      <label class="form-check-label" for="todo{{ i }}">Mark as Done ✔️</label>
+    </div>
+
+    <button class="btn btn-sm btn-outline-danger" (click)="onClick(todo)">
+      Delete
+    </button>
+  </div>
+</div>

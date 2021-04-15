@@ -1,0 +1,57 @@
+<!-- <h1>Hello World</h1> -->
+<!-- <h3>app name : {{ title }}</h3>
+
+<h3>number is : {{ number }}</h3>
+<button (click)="change()">CHANGE</button> &nbsp;
+<button (click)="reset()">RESET</button> &nbsp;
+<button (click)="up()">UP</button> &nbsp;
+<button (click)="down()">DOWN</button>
+<br />
+<hr />
+<hr /> -->
+<!-- <ul>
+  <li *ngFor="let item of data">{{ item.title }}</li>
+</ul> -->
+
+<!-- assignments starts from below -->
+<!-- <app-welcome></app-welcome>
+<app-login></app-login> -->
+<div class="bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">ToDo App</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/about">About </a>
+        </li>
+        <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> -->
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  <br />
+  <br />
+
+  <div class="footer">
+    <p>
+      Made with ❤ by
+      <a href="https://twitter.com/shivananda_ssk" target="_blank"> Shiv</a>
+    </p>
+  </div>
+</div>
